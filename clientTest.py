@@ -4,7 +4,7 @@ host = socket.gethostname()
 host_ip = socket.gethostbyname(host)
 port = 8080
 client.connect(('192.168.1.86', 8080))
-client.send("I am CLIENT".encode())
+client.send('I am CLIENT'.encode())
 from_server = client.recv(4096)
 client.close()
 print(from_server.decode('ascii'))
