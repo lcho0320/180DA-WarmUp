@@ -20,6 +20,6 @@ while True:
 		if not data: break
 		from_client += data
 		print(from_client.decode('ascii'))
-		conn.send("I am SERVER".encode())
+		conn.send('I am SERVER'.encode())
 	conn.close()
 	print('client disconnected')
